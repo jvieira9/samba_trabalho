@@ -17,3 +17,5 @@ services:
         - /usr2:/mnt4
 
       # command: '-s "Publico;/mnt;yes;no;yes;all;admin" -s "Privado;/mnt2;yes;no;no;none;admin" -s "usr1;/mnt3;yes;no;no;user1;admin" -s "usr2;/mnt4;yes;no;no;user2;admin" -u "admin;admin" -u "user1;user1" -u "user2;user2"'
+
+# To Do: Private share only admins, add admin users
