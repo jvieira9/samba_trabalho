@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+    samba:
+      build: ./Images/Samba/.
+      container_name: ${PRJ_BASE_NAME}_server
+      tty: true
+      ports:
+        - "139:139"
+        - "445:445"
+      env_file:
+        - .env
+      volumes:
+        - /publico:/mnt
+        - /privado:/mnt2
+        - /usr1:/mnt3
+        - /usr2:/mnt4
+
+      # command: '-s "Publico;/mnt;yes;no;yes;all;admin" -s "Privado;/mnt2;yes;no;no;none;admin" -s "usr1;/mnt3;yes;no;no;user1;admin" -s "usr2;/mnt4;yes;no;no;user2;admin" -u "admin;admin" -u "user1;user1" -u "user2;user2"'
