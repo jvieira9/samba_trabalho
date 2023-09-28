@@ -15,4 +15,4 @@ services:
         - ./vol/samba/privado:/mnt2
         - ./vol/samba/usr1:/mnt3
         - ./vol/samba/usr2:/mnt4
-        - ./vol/samba/conf/samba:/etc/samba
+        - ./conf/samba:/etc/samba
